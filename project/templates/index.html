@@ -15,12 +15,11 @@
   <img src="{% static 'images/cake.jpg' %}" alt="Home Baking Picture" width="200" height="150">  
   <h1>Divya's Home Baking</h1>
   <div class="nav">
-    <button class="btn">Home </button> 
-    <button class="btn" onclick="window.location.href='about.html'">About</button>
-    <button class="btn" onclick="window.location.href='contact.html'">Contact</button>
-    <!-- Add this to the nav section in index.html -->
-    <button class="btn" onclick="window.location.href='order.html'">Order Now</button>
-
+    <!-- Updated Navigation Links -->
+    <a href="{% url 'home' %}" class="btn">Home</a>
+    <a href="{% url 'about' %}" class="btn">About</a>
+    <a href="{% url 'contact' %}" class="btn">Contact</a>
+    <a href="{% url 'order' %}" class="btn">Order Now</a>
   </div>
 </div>
 
@@ -50,8 +49,6 @@ What We Offer: <br><br>
 
 Our Promise: <br> 
 Quality, freshness, and a sprinkle of creativity go into every recipe we create. Taste the difference of home-baked goodness with Divya's Home Baking.
-
-
     </p> <br>
     <center><button class="btn">Read More</button></center>
   </div>
