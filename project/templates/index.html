@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya's Home Baking</title>
+  <link rel="icon" type="image/x-icon" href="cake.jpg">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">       
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+  <img src="{% static 'images/cake.jpg' %}" alt="Home Baking Picture" width="200" height="150">  
+  <h1>Divya's Home Baking</h1>
+  <div class="nav">
+    <button class="btn">Home </button> 
+    <button class="btn">About</button>
+    <button class="btn">Contact</button>
+  </div>
+</div>
+
+<!-- Welcome Banner -->
+<div class="banner">
+  <center><img src="{% static 'images/bakery.webp' %}" alt="Bakery Image" height="500px" width="800px"></center>
+</div>
+
+<!-- About Section -->
+<div class="about-section">
+  <div class="about-image">
+    <img src="{% static 'images/bakinggirl3.jpg' %}" alt="Baker Image" height="500px" width="500px">  
+  </div>
+  <div class="about-content">
+    <h2>Home Page</h2>
+    <p>Welcome to Divya's Delights, where passion meets creativity in every bite...🍰
+      <br> <br>
+
+
+Discover the joy of homemade treats, crafted with love and the finest ingredients! At **Divya's Home Baking**, we believe every bite should be a moment of pure delight. From soft, pillowy cakes to chewy cookies and mouthwatering pastries, our baked goods are made fresh and customized to bring a personal touch to your celebrations. <br> 
+<br>
+What We Offer: <br><br> 
+ * Cakes for Every Occasion: Birthdays, anniversaries, or just a treat for yourself – choose from a range of flavors and styles.  <br> 
+ * Freshly Baked Cookies: From classic chocolate chip to unique seasonal flavors.  <br>  
+ * Cupcakes & Muffins: Perfectly portioned and beautifully decorated. <br>  
+ * Custom Orders: Have a special theme in mind? Let us bring your vision to life. <br> 
+
+Our Promise: <br> 
+Quality, freshness, and a sprinkle of creativity go into every recipe we create. Taste the difference of home-baked goodness with Divya's Home Baking.
+
+
+    </p> <br>
+    <center><button class="btn">Read More</button></center>
+  </div>
+</div>
+
+<!-- Product Gallery -->
+<center> <h1>Product Gallery</h1> </center> <br> <br>
+<div class="product-gallery"> 
+  <div class="product">
+    <h3>Brownie</h3>
+    <img src="{% static 'images/brownie.jpg' %}" alt="Brownie" height="150" width="200">
+    <p>Butter makes brownies moist, while sugar adds sweetness...</p>
+    <button class="btn">Read More</button>
+  </div>
+  <div class="product">
+    <h3>Cakes</h3>
+    <img src="{% static 'images/cake-single.jpg' %}" alt="Cake" height="150" width="200">
+    <p>Look for a soft, fluffy texture with an even crumb structure...</p>
+    <button class="btn">Read More</button>
+  </div>
+  <div class="product">
+    <h3>Cookies</h3>
+    <img src="{% static 'images/butter-cookies.jpg' %}" alt="Cookies" height="150" width="200">
+    <p>Butter cookies are buttery, tender cookies that can be enjoyed as-is...</p>
+    <button class="btn">Read More</button>
+  </div>
+  <div class="product">
+    <h3>Cup Cakes</h3>
+    <img src="{% static 'images/cupcakes.jpg' %}" alt="Cup Cakes" height="150" width="200">
+    <p>Cupcakes are small, tasty snack cakes that are favored for their portability...</p>
+    <button class="btn">Read More</button>
+  </div>
+</div>
+
+<!-- Services Section -->
+<div class="services-section">
+  <h2>Our Services</h2>
+  <p>Welcome to Divya's Delights, where we offer a range of personalized baking services... <br> <br>
+    1. Custom Cakes 🎂  <br>
+From classic designs to themed creations, our custom cakes are baked to perfection and crafted to match your vision. Choose your favorite flavors, fillings, and frostings, and let us bring your cake dreams to life!
+<br> 
+Specialty Flavors: Chocolate, Vanilla, Red Velvet, Butterscotch, and more <br>
+Themes: Birthdays, weddings, anniversaries, or any celebration <br>
+  </p>  <br> <br>
+ <center><button class="btn">Read More</button></center> 
+</div>
+
+<!-- Contact Section -->
+<div class="contact-section">
+  <div class="map">
+    <h3>Find Our Location</h3>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25919.252558704142!2d76.9270341!3d11.309839887545738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1732429988237!5m2!1sen!2sin" 
+    width="600" 
+    height="500">
+</iframe>
+
+  </div>
+  <div class="contact-form">
+    <h3>Start From Your Happiness</h3>
+    <form method="post">
+      {% csrf_token %}
+      <label for="name">Your Sweet Name:</label>
+      <input type="text" name="name" placeholder="Divya">
+      <label for="mn">Mobile Number:</label>
+      <input type="text" name="mn" placeholder="987654321">
+      <label for="address">Address:</label>
+      <input type="text" name="address">
+      <label for="mailId">E-Mail:</label>
+      <input type="text" name="email">
+      <label for="fb">Feedback:</label>
+      <input type="text" name="fb">
+      <button type="submit" class="btn submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 Divya's Home Baking. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
