@@ -1,130 +1,193 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #12806a;
-    font-family: serif;
-    color: white;
-  }
-  
-  /* Header */
-  .header {
-    display: flex;
-    align-items: center;
-    background-color: #12806a;
-    padding: 20px;
-  }
-  
-  .header img {
-    margin-right: 20px;
-  }
-  
-  .header h1 {
-    flex-grow: 1;
-  }
-  
-  .nav {
-    display: flex;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    margin: 5px;
-    font-weight: bold;
-    background-color: #7d1371;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #5a0b50;
-  }
-  
-  /* Banner */
-  .banner {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  /* About Section */
-  .about-section {
-    display: flex;
-    margin: 20px;
-  }
-  
-  .about-content {
-    padding: 20px;
-    font-size: 18px;
-  }
-  
-  /* Product Gallery */
-  .product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .product {
-    width: 23%;
-    padding: 20px;
-    background-color: #12806a;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid white;
-  }
-  
-  .product img {
-    margin-bottom: 10px;
-  }
-  
-  /* Services Section */
-  .services-section {
-    text-align:justify;
-    padding: 30px;
-  }
-  
-  
-  
-  /* Contact Section */
-  .contact-section {
-    display: flex;
-    padding: 20px;
-  }
-  
-  .map {
-    width: 50%;
-  }
-  
-  .contact-form {
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  .contact-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .submit {
-    background-color: #7d1371;
-  }
-  
-  /* Footer */
-  .footer {
-    background-color: #12806a;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #12806a;
+  font-family: serif;
+  color: white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #12806a;
+  padding: 20px;
+}
+
+.header img {
+  margin-right: 20px;
+}
+
+.header h1 {
+  flex-grow: 1;
+}
+
+.nav {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  background-color: #7d1371;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5a0b50;
+}
+
+/* Banner */
+.banner {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  margin: 20px;
+}
+
+.about-content {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.about-section img {
+  margin-left: 20px;
+}
+
+/* Product Gallery */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product {
+  width: 23%;
+  padding: 20px;
+  background-color: #12806a;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.product img {
+  margin-bottom: 10px;
+}
+
+/* Services Section */
+.services-section {
+  text-align: justify;
+  padding: 30px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  padding: 20px;
+}
+
+.map {
+  width: 50%;
+}
+
+.contact-form {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.submit {
+  background-color: #7d1371;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #5a0b50;
+}
+
+/* Order Section */
+.order-section {
+  padding: 20px;
+  background-color: #12806a;
+  border-radius: 10px;
+}
+
+.order-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.order-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-section label {
+  margin-bottom: 5px;
+}
+
+.order-section input,
+.order-section select,
+.order-section textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.order-section input[type="number"] {
+  width: 50%;
+}
+
+.order-section textarea {
+  height: 120px;
+}
+
+.order-section .submit {
+  background-color: #7d1371;
+  padding: 12px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.order-section .submit:hover {
+  background-color: #5a0b50;
+}
+
+/* Footer */
+.footer {
+  background-color: #12806a;
+  text-align: center;
+  padding: 10px;
+}

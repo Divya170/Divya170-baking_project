@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Divya's Home Baking</title>
+  <link rel="icon" type="image/x-icon" href="cake.jpg">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+  <img src="{% static 'images/cake.jpg' %}" alt="Home Baking Picture" width="200" height="150">  
+  <h1>Divya's Home Baking</h1>
+  <div class="nav">
+    <button class="btn" onclick="window.location.href='index.html'">Home</button>
+    <button class="btn" onclick="window.location.href='about.html'">About</button>
+    <button class="btn" onclick="window.location.href='contact.html'">Contact</button>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="about-section">
+  <h2>About Us</h2>
+  <p>At Divya's Home Baking, we take pride in offering a range of baked goods, created with love and care. Our mission is to bring delicious homemade treats to your table, crafted with only the finest ingredients. Whether you are celebrating a special occasion or simply treating yourself, we have something for everyone!</p>
+  <img src="{% static 'images/bakinggirl3.jpg' %}" alt="Baker Image" height="500px" width="500px">  
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 Divya's Home Baking. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

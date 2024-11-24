@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Divya's Home Baking</title>
+  <link rel="icon" type="image/x-icon" href="cake.jpg">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+  <img src="{% static 'images/cake.jpg' %}" alt="Home Baking Picture" width="200" height="150">  
+  <h1>Divya's Home Baking</h1>
+  <div class="nav">
+    <button class="btn" onclick="window.location.href='index.html'">Home</button>
+    <button class="btn" onclick="window.location.href='about.html'">About</button>
+    <button class="btn" onclick="window.location.href='contact.html'">Contact</button>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact-section">
+  <div class="map">
+    <h3>Find Our Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25919.252558704142!2d76.9270341!3d11.309839887545738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1732429988237!5m2!1sen!2sin" width="600" height="500"></iframe>
+  </div>
+  <div class="contact-form">
+    <h3>Contact Us</h3>
+    <form method="post">
+      {% csrf_token %}
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" placeholder="Divya">
+      <label for="email">E-Mail:</label>
+      <input type="email" name="email" placeholder="example@mail.com">
+      <label for="message">Message:</label>
+      <textarea name="message" placeholder="Write your message here..."></textarea>
+      <button type="submit" class="btn submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 Divya's Home Baking. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
