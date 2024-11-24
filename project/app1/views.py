@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Product, AboutContent, Order, table
-from .forms import OrderForm, ContactForm
+from app1.forms import OrderForm, ContactForm
 from django.core.mail import send_mail
 
 # Home Page View: Displays Banner, About Section, and Product Gallery
